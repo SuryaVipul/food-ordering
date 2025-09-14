@@ -1,0 +1,34 @@
+{
+  "name": "namaste-react-course",
+  "version": "1.0.0",
+  "description": "this is namaste react course, I am learning react with the help of this course",
+  "homepage": "https://github.com/SuryaVipul/React#readme",
+  "bugs": {
+    "url": "https://github.com/SuryaVipul/React/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuryaVipul/React.git"
+  },
+  "license": "ISC",
+  "author": "Surya Shukla",
+  "type": "commonjs",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@parcel/transformer-react-refresh-babel": "^2.0.0-alpha.3",
+    "parcel": "^2.15.2"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router": "^6.30.1",
+    "react-router-dom": "^6.30.1"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
