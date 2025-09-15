@@ -1,5 +1,5 @@
 export const LOGO_URL =
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgmPV9ZLmHJZClHA1TcLNY0Zc2uppG9Oq8zQ&s";
+  "https://logos-world.net/wp-content/uploads/2020/11/Swiggy-Logo.png";
 
 export const IMG_CDN_URL =
   "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_308,h_120,c_fill/";
