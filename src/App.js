@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import { lazy } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
@@ -8,15 +8,28 @@ import Contact from "./components/Contact";
 import Error from "./components/Error";
 import RestaurantsMenus from "./components/RestaurantsMenus";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-
+import UserContext from "./utils/userContext";
 //Config Driven UI
 
 const AppLayout = () => {
+  const [userName, setUserName] = useState();
+
+  //authentication
+  useEffect(() => {
+    // Make an API call and send username and password
+    const data = {
+      name: "Surya",
+    };
+    setUserName(data.name);
+  }, []);
+
   return (
-    <div className="app-container">
-      <Header />
-      <Outlet />
-    </div>
+    <UserContext.Provider value={{ loggedInUser: userName, setUserName }}>
+      <div className="app-container">
+        <Header />
+        <Outlet />
+      </div>
+    </UserContext.Provider>
   );
 };
 
