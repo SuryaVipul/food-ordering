@@ -18,3 +18,14 @@
 - Https
 - Tree Shaking
 - Different dev and production bundles
+
+
+
+
+# Redux Toolkit
+- Install @reudxjs/toolkit and react-redux
+- Build our store
+- connect our store to our app
+- Slice (cartSlice)
+- dispatch(action)
+- Selector
